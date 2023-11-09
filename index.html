@@ -10,7 +10,32 @@
     <header>
         <h1>Weather Dashboard</h1>
     </header>
+    <div class="container">
+        <form>
+            City: <input class="form-control" id="query" type="text">
+            <br>
+            <button class="btn btn-primary" id="searchButton">Search</button>
+        </form>
+        
+        <div id="searchHistory"></div>
+        
+       <div>
+            <div id="currentWeather"></div>
+            <h3>Current Weather</h3>
+            <div id="currentWeatherContainer">
+            </div>
+       </div>
+    
+       <div>
+            <div id="forecast">
+            </div>
+            <h3>5-Day Forecast</h3>
+            <div id="forecastContainer">
+            </div>
+       </div>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src="script.js"></script>
     
 </body>

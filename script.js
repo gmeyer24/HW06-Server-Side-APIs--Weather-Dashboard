@@ -145,6 +145,13 @@ searchHistoryContainer.addEventListener("click", function(event){
 
 })
 
+// Use for Dayjs
+// setInterval(function () {
+//   var currentDate = dayjs().format("dddd, MMMM D, YYYY: h:mm:ssa");
+//   //   console.log(currentTime);
+//   $("#currentDay").text(currentDate);
+// }, 1000);
+
 
 
 //   var resultDiv = document.createElement("div");

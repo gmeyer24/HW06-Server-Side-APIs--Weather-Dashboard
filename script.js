@@ -43,7 +43,7 @@ function searchCityEvent(event){
 
 function searchCity(cityName) {
         
-    // moved to apendNewCity function to avoid dups
+    // moved to apendNewCity function to avoid dups -
     // cityNamesSearched.push(cityName);
 
     appendNewCity(cityName);
@@ -88,7 +88,7 @@ function searchCity(cityName) {
     displayWeather(currentWeather, currentWeatherContainer);
 
     // 5 day forecast
-    // next 5 entries from data
+    // next 5 entries from data - maybe remove
     // var fiveDayForecast = data.list.slice(1, 6);
     // fiveDayForecast.forEach(forecast => {
     //     displayWeather(forecast, forecastDiv);
@@ -153,7 +153,7 @@ searchHistoryContainer.addEventListener("click", function(event){
 // }, 1000);
 
 
-
+// remove below
 //   var resultDiv = document.createElement("div");
 //   var docTitle = document.createElement("h3");
 //   var details = document.createElement("p");

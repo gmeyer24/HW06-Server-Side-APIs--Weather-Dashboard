@@ -86,12 +86,8 @@ function searchCity(cityName) {
           displayWeather(currentWeather, currentWeatherContainer);
 
           // 5 day forecast
-          // next 5 entries from data - maybe remove
-          // var fiveDayForecast = data.list.slice(1, 6);
-          // fiveDayForecast.forEach(forecast => {
-          //     displayWeather(forecast, forecastDiv);
-          // });
-          // data does not go 6 days out like I need
+          // next 5 entries from data
+          // data does not go 6 days out like I need. the free api key only goes 5 days out. I did not want to spend money to get an api key that goes 6 days out for a 5 day forecast.
           for (let i = 6; i < data.list.length; i += 6) {
             displayWeather(data.list[i], forecastDiv);
           }
@@ -140,26 +136,6 @@ searchHistoryContainer.addEventListener("click", function (event) {
   console.log(event.target.textContent);
   searchCity(event.target.textContent);
 });
-
-// Use for Dayjs
-// setInterval(function () {
-//   var currentDate = dayjs().format("dddd, MMMM D, YYYY: h:mm:ssa");
-//   //   console.log(currentTime);
-//   $("#currentDay").text(currentDate);
-// }, 1000);
-
-// remove below
-//   var resultDiv = document.createElement("div");
-//   var docTitle = document.createElement("h3");
-//   var details = document.createElement("p");
-
-//   docTitle.textContent = data.city.name;
-//   details.textContent = data.list;
-
-//   resultDiv.appendChild(docTitle);
-//   resultDiv.appendChild(details);
-
-//   resultsDiv.appendChild(resultDiv);
 
 // GIVEN a weather dashboard with form inputs
 // WHEN I search for a city
